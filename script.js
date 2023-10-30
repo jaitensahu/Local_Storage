@@ -29,11 +29,7 @@ function getData(){
     localStorage.setItem("village",village)
     putData()
 }
-if(localStorage.length==0){
-    getData();
-}else{
-    putData()
-}
+
 
 function putData(){
 
@@ -48,3 +44,8 @@ function putData(){
 }
 
 
+if(localStorage.length==0){
+    getData();
+}else{
+    putData()
+}
